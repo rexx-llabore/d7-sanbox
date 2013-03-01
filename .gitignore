@@ -7,3 +7,6 @@ sites/*/private
 
 #Ignore my local site
 sites/d7-sandbox.dev
+
+#My Komodo 6 project file
+d7-sandbox.komodoproject
