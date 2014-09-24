@@ -1,0 +1,6 @@
+name = Acquia Cert Prep
+description = Acquia Cert Prep
+package = Acquia Cert
+core = 7.x
+project = "acquia_cert"
+
