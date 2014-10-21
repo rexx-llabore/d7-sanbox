@@ -30,6 +30,9 @@
           else {            
             $('#wordgame-links').hide('slow');
             
+            // Clear it first before appending.
+            $('#word', context).html('');
+            
             // Display user inputs on the screen.
             if (Object.keys(userInputs).length > 0) {
               for (var key in userInputs) {
