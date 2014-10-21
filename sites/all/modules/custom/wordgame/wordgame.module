@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * Implements hook_menu()
+ */
+function wordgame_menu() {
+  $items = array();
+  
+  $items['wordgame'] = array(
+    'title'            => 'Word Game',
+    'page callback'    => 'wordgame_wordgame_callback',
+    'access arguments' => array('access content'),
+    'type'             => MENU_CALLBACK,
+  );
+  
+  return $items;
+}
+
+/**
+ * Implements hook_theme
+ */
+function wordgame_theme($existing, $type, $theme, $path) {
+  $themes = array();
+  
+  $themes['wordgame'] = array(
+    'template' => 'templates/wordgame',
+  );
+  
+  return $themes;
+}
+
+
+function wordgame_wordgame_callback() {
+  $drupal_path = drupal_get_path('module', 'wordgame');
+  drupal_add_js($drupal_path . '/js/wordgame.js');
+  return theme('wordgame');
+}

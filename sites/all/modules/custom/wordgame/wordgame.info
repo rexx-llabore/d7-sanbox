@@ -1,0 +1,8 @@
+name = Wordgame
+description = wordgame
+core = 7.x
+package = ~Custom
+
+core = "7.x"
+project = "wordgame"
+
