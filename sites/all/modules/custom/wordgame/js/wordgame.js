@@ -36,7 +36,9 @@
             // Display user inputs on the screen.
             if (Object.keys(userInputs).length > 0) {
               for (var key in userInputs) {
-                $('#word', context).append(key + ':' + userInputs[key] + '</br>');
+                if ($.type(userInputs[key]) === 'string') {
+                  $('#word', context).append(key + ': ' + userInputs[key] + '</br>');
+                }
               }
             }
             clearInterval(interval);
