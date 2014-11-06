@@ -44,7 +44,7 @@
           $('#word-container', context).addClass('text-left');
           
           // Show the results
-          $('#word-result', context).show();
+          $('#word-result-title', context).text('Results');
         }
       }
       

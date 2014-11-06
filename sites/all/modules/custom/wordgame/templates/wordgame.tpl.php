@@ -4,8 +4,8 @@
     <span id="word" style="font-size: 42px;">
       test
     </span>
-    <span id="word-result" style="font-size: 12px;">
-    </span>
+    <p><span id="word-result-title" style="font-size: 24px;"></span></p>
+    <span id="word-result" style="font-size: 12px;"></span>
   </div>
   <div id="wordgame-links" class="text-center">
     <a id="word-link" href="#" class="btn btn-primary">W</a>
