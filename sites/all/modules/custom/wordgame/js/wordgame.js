@@ -34,7 +34,7 @@
           if (Object.keys(userInputs).length > 0) {
             for (var key in userInputs) {
               if ($.type(userInputs[key]) === 'string') {
-                $('#word-result', context).append(key + ': ' + userInputs[key] + '</br>');
+                $('#word-result', context).append(userInputs[key] + '</br>');
               }
             }
           }
@@ -45,6 +45,9 @@
           // Center the results
           $('#word-container', context).removeClass();
           $('#word-container', context).addClass('text-left');
+          
+          // Remove the display
+          $('#word', context).text('');
           
           // Show the results
           $('#word-result-title', context).text('Results');
