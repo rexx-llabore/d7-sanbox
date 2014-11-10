@@ -11,6 +11,9 @@
           // Display the first word and set position
           var wordObj = wordList.shift();
           
+          // Rest the position. We need to remove whatever class it currently has.
+          $('#word-container', context).removeClass();
+          
           // Set the position of the text
           if (wordObj['pos'] == 'r') {
             $('#word-container').addClass('text-right');
@@ -64,13 +67,13 @@
         // Always clear the time out ID
         clearTimeout(timeoutID);
         
-        timeoutID = setTimeout(hideText, 500);
+        timeoutID = setTimeout(hideText, 3000);
       }
       
       var wordList = [
         {'word' : 'bob', 'pos' : 'r'},
-        {'word' : 'test', 'pos' : 'r'},
-        {'word' : 'happy', 'pos' : 'l'},
+        {'word' : 'test', 'pos' : 'l'},
+        {'word' : 'happy', 'pos' : 'r'},
         {'word' : 'asdf', 'pos' : 'l'},
         {'word' : 'qwer', 'pos' : 'r'},
       ];

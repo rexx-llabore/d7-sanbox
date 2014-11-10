@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<div id="wordgame-container" style="display: none"> 
-  <div id="word-container">
+<div id="wordgame-container" style="display: none;"> 
+  <div id="word-container" style="min-height:70px;">
     <span id="word" style="font-size: 42px;">
       test
     </span>
